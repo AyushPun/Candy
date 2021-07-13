@@ -1,76 +1,270 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="app.css" />
 
     <title>Museum of Candy</title>
 
-    <link rel="shortcut icon" href="candy-2312.png" type="image/x-icon">
+    <link rel="shortcut icon" href="candy-2312.png" type="image/x-icon" />
   </head>
-  
+
   <body>
-    <nav class="navbar navbar-dark navbar-expand-md pt-0 pb-0 container-fluid fixed-top" id="mainNavbar">
-      <a href="a" class="navbar-brand">CANDY</a>
+    <nav
+      class="
+        navbar navbar-dark navbar-expand-md
+        pt-0
+        pb-0
+        container-fluid
+        fixed-top
+      "
+      id="mainNavbar"
+    >
+      <a href="index.html" class="navbar-brand">CANDY</a>
       <!-- CREATING HAMBURGER -->
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navLinks"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- HAMBURGER CONTENTS -->
       <div class="collapse navbar-collapse" id="navLinks">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="" class="nav-link">HOME</a>
+            <a href="#home" class="nav-link">HOME</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">ABOUT</a>
+            <a href="#about" class="nav-link">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">TICKETS</a>
+            <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#bookYourTickets">TICKETS</a>
           </li>
         </ul>
       </div>
-    </nav> 
+    </nav>
 
-
-    <section class="container-fluid px-0">
+    <section class="container-fluid px-0" id="home">
       <div class="row align-items-center">
         <div class="col-lg-6">
           <div class="text-white text-center d-none d-lg-block mt-5">
-            <div class="text-center display-1" id="maintxt">MUSEUM OF <div id="effect">CANDY </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-emoji-laughing" viewBox="0 0 16 16">
-              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-              <path d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zM7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z"/>
-            </svg>
+            <div class="text-center display-1" class="maintxt">
+              MUSEUM OF
+              <div id="effect">CANDY</div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                fill="currentColor"
+                class="bi bi-emoji-laughing"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                />
+                <path
+                  d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zM7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z"
+                />
+              </svg>
+            </div>
           </div>
-            
-          </div>
-         
         </div>
         <div class="col-lg-6">
-          <img class="img-fluid" src="imgs/hand2.png" alt="">
+          <img class="img-fluid" src="imgs/hand2.png" alt="" />
         </div>
       </div>
     </section>
 
+    <section class="container-fluid px-0">
+      <div class="row align-items-center block" id="about">
+        <div class="col-md-6 order-2 order-md-1">
+          <img src="imgs/milk.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-md-6 text-center order-1 order-md-2">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-7 content mb-5 mb-md-0">
+              <h2>ABOUT MUSEUM</h2>
+              <img
+                src="imgs/lolli_icon.png"
+                alt=""
+                class="d-none d-lg-inline"
+              />
+              <p class="lead">
+                What if an eccentric chocolatier and a daredevil pop star had
+                awhirlwind romance, got married while skydiving, and had a
+                glamorous, glittering love child who grew up to rule a small
+                nation? Welcome to Museum of Candy, where colossal candyfloss
+                constructions meld with a tantalizing taffy twistedness!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="row align-items-center block">
+        <div class="col-md-6 order-2">
+          <img src="imgs/gumball.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-md-6 text-center order-1">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-7 content mb-5 mb-md-0">
+              <h2>HISTORY</h2>
+              <img
+                src="imgs/lolli_icon.png"
+                alt=""
+                class="d-none d-lg-inline"
+              />
+              <p class="lead">
+                Explore our sprawling sanctuary of confectionary bliss,
+                tastefully curated by Hollywood Candy Queen Jackie Sorkin,
+                realized by master fabricator Zac Hartog, and brought to life by
+                life-long retailer, John Goodman. This four-month interactive
+                art installation celebrates the vibrant colors.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="row align-items-center block">
+        <div class="col-md-6 order-2 order-md-1">
+          <img src="imgs/sprinkles.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-md-6 text-center order-1 order-md-2">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-7 content mb-5 mb-md-0">
+              <h2>CASTING</h2>
+              <img
+                src="imgs/lolli_icon.png"
+                alt=""
+                class="d-none d-lg-inline"
+              />
+              <p class="lead">
+                Join our candy kingdom guiding guests through our sprawling
+                sanctuary of confectionery bliss. Be one of the lucky Candy
+                Ambassadors to join our magical candy wonderland. We are looking
+                for hosts, actors, waiters, comedians, dancers, anyone who loves
+                people, loves to perform, entertain crowds, party and loves
+                candy.!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
+    <!-- <footer id="contacts" class="mb-5">
+      <div class="container-fluid">
+        <div
+          class="
+            d-flex
+            flex-column flex-md-row
+            justify-content md-between
+            align-items-md-center
+            mx-0
+          "
+        >
+          <ul class="nav d-flex justify-content-center text-center text-primary text-uppercase">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#history" class="nav-link">History</a>
+            </li>
+          </ul>
+          <ul class="nav d-flex justify-content-center text-center text-uppercase my-3">
+            <li class="nav-item">
+              <a href="https://www.instagram.com" target="blanck" class="nav-link social">
+                <span class="sr-only">Instagram</span>
+                <i class="fab fa-instagram fa-2x text-secondary"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.facebook.com" target="blanck" class="nav-link social">
+                <span class="sr-only">Facebook</span>
+                <i class="fab fa-facebook fa-2x text-secondary"></i>
+              </a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.twitter.com" target="blanck" class="nav-link social">
+                <span class="sr-only">Twitter</span>
+                <i class="fab fa-twitter fa-2x text-secondary"></i>
+              </a>
+            </li>
+            </li>
+          </ul>
+      </div>
+      </div>
+    </footer> -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script>
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $("#mainNavbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $("a[href*=#]").on("click", function (e) {
+          var anchor = $(this);
+          $("html, body")
+            .stop()
+            .animate(
+              {
+                scrollTop: $(anchor.attr("href")).offset().top,
+              },
+              777
+            );
+          e.preventDefault();
+          return false;
+        });
+      });
+    </script>
   </body>
 </html>

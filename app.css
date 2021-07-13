@@ -1,6 +1,24 @@
 body {
   background-color: #f5d9d5;
   font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
+}
+
+.content h2 {
+  color: #ea1c2c;
+  font-weight: 100;
+  font-size: 2.4rem;
+}
+
+.content p {
+  color: #fd276f;
+  font-weight: 100;
+  font-size: 1.125rem;
+  line-height: 2;
+}
+
+.block {
+  margin-top: 70px;
 }
 
 #mainNavbar {
@@ -24,5 +42,15 @@ body {
 #effect {
     color: #ea1c2dd8;
     text-shadow: 10px 10px 10px rgba(255, 0, 0, 0.562);
+    font-weight: 100;
+    transition: 0.8s;
+}
 
+#effect:hover {
+  font-size: 120px;
+}
+
+.navbar.scrolled {
+  background: rgb(222, 192, 222);
+  transition: background-color 500ms;
 }
