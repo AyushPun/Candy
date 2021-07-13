@@ -43,7 +43,7 @@ body {
     color: #ea1c2dd8;
     text-shadow: 10px 10px 10px rgba(255, 0, 0, 0.562);
     font-weight: 100;
-    transition: 0.8s;
+    transition: 500ms;
 }
 
 #effect:hover {
